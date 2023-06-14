@@ -1,6 +1,3 @@
-
-
-// export default FetchData;
 import React, { useEffect, useState } from 'react';
 import Error from '../../components/Error';
 
