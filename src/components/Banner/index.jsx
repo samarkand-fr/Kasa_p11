@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-
+// A banner component that displays an image and an optional title
 const Banner = ({ picture, title }) => {
-    return (
-      <section >
-        <div >
-          <img src={picture} alt="arrière-plan paysage" />
-        </div>
-        {title && <h1>{title}</h1>}
-      </section>
-    );
+  return (
+    <div className="banner">
+      <img src={picture} className="banner-img" alt="Background landscape" />
+      {title && <h1 className="banner-title">{title}</h1>}
+    </div>
+  );
 }
-export default Banner
+
+export default Banner;

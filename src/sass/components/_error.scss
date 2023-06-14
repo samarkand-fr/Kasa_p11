@@ -1,0 +1,45 @@
+
+.error {
+	text-align: center;
+	&-title {
+		@include margin-top-bottom(6rem, 0.6875rem);
+		color: $primary-color;
+		font-size: 6rem;
+		font-weight: 700;
+		line-height: 142.6%;
+		@include desktop-breakpoint {
+			@include margin-top-bottom(4rem, 2rem);
+			font-size: 14rem;
+			line-height: 100%;
+		}
+	}
+	&-subtitle {
+		margin: 0 auto;
+		margin-top: 0.625rem;
+		color: $primary-color;
+		font-size: 1.125rem;
+		font-weight: $font-weight;
+		line-height: 142.6%;
+		@include desktop-breakpoint {
+			font-size: 2.25rem;
+		}
+		&-br {
+			@include desktop-breakpoint {
+				display: none;
+			}
+		}
+	}
+	&-link {
+		display: block;
+		@include margin-top-bottom(5.5rem,5.5rem);
+		color: $primary-color;
+		font-size: 0.875rem;
+		font-weight: $font-weight;
+		line-height: 142.6%;
+		text-decoration-line: underline;
+		@include desktop-breakpoint {
+			@include margin-top-bottom(5rem,5rem);
+			font-size: 1.125rem;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+
+.banner {
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 1.375rem;
+	overflow: hidden;
+	 display: flex;
+    justify-content: center;
+    align-items: center;
+	@include desktop-breakpoint {
+		margin-bottom: 2.6875rem;
+	}
+	&-img {
+		width: 100%;
+		height: 6.9375rem;
+		object-fit: cover;
+		border-radius:$border-radius;
+		filter: brightness(70%);
+		@include desktop-breakpoint {
+			height: 13.9375rem;
+		}
+	}
+	&-title {
+		@include position;
+		z-index: 1;
+		left: 1rem;
+		width: 66%;
+		transform: translateY(-50%);
+		color: $white-color;
+		font-size: 1.5rem;
+		font-weight: $font-weight;
+		line-height: 100%;
+		@include desktop-breakpoint {
+			width: 100%;
+			font-size: 3rem;
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+
+.header {
+	@include position;
+	@include flex-spacebetween;
+	right: 1.25rem;
+	flex-wrap: nowrap;
+    transform: translateY(-50%);
+	
+	&-wrapper {
+		position: relative;
+		width: 100%;
+		width: stretch;
+		padding: 1.25rem;
+		@include desktop-breakpoint {
+			padding: 2.5rem 1.25rem;
+		}
+		img {
+			width: auto;
+			height: 2.625rem;
+			@include desktop-breakpoint {
+				height: 3.875rem;
+			}
+		}
+	}
+	&-logo {
+		color:$primary-color;
+	}
+}
+
+
+
+

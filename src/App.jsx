@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import Error from './pages/Error'
+import ErrorPage from './pages/ErrorPage'
 import About from './pages/About'
-import Flat from './pages/Flat'
+import Annonce from './pages/Annonce'
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/flat/:flatId" element={<Flat />} />
-          <Route exact path="/about" element={<About />} />
-          <Route path="*" element={<Error />} />
+          <Route exact path="/annonce/:annonceId" element={<Annonce />} />
+          <Route exact path="/a-propos" element={<About />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

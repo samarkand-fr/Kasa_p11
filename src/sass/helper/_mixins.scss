@@ -1,0 +1,42 @@
+@mixin position{
+	position: absolute;
+	top: 50%;
+}
+
+@mixin margin-top-bottom( $margin-top, $margin-bottom) {
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom;
+}
+
+@mixin flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin flex-spacebetween{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin desktop-breakpoint {
+	@media screen and (min-width: map-get($breakpoints, desktop)) {
+		@content;
+	}
+}
+
+@mixin tablet-breakpoint {
+	@media screen and (min-width: map-get($breakpoints, tablet)) {
+		@content;
+	}
+}
+@mixin mobile-breakpoint {
+	@media screen and (min-width: map-get($breakpoints, mobile)) {
+		@content;
+	}
+}
+
+
+
+
+

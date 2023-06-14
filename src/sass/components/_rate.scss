@@ -1,0 +1,15 @@
+.rating {
+    padding: 1.5rem 0;
+    text-align: right;
+    display: flex;
+     @include desktop-breakpoint{
+       padding: 1rem 0;
+     }
+ 
+    &__item {
+      width: 1.9rem;
+      height: 1.9rem;
+      margin-left: 0.8rem;
+      margin-bottom: .5rem;
+    }
+  }

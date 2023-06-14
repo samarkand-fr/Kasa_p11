@@ -1,0 +1,20 @@
+.home {
+	@include desktop-breakpoint {
+		padding-bottom: 2.6875rem;
+	}
+}
+
+.thumb-wrapper {
+	@include desktop-breakpoint {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		margin: 0 auto;
+		padding-top: 3.5rem;
+		padding-bottom: 0;
+		row-gap: 3.125rem;
+		border-radius: $border-radius;
+		background: #f7f7f7;
+	}
+}
+

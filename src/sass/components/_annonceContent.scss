@@ -1,0 +1,144 @@
+.annonce {
+	&-title {
+	@include margin-top-bottom(0.9375rem, 0);
+	  color: $primary-color;
+	  font-size: 1.125rem;
+	  font-weight: $font-weight;
+	  line-height: 142.6%;
+  
+	  @include desktop-breakpoint {
+		font-size: 2.25rem;
+	  }
+	}
+  
+	&-location {
+	  @include margin-top-bottom(0.3125rem, 0);
+	  color: $primary-color;
+	  font-size: 0.875rem;
+	  font-weight: $font-weight;
+	  line-height: 142.6%;
+  
+	  @include desktop-breakpoint {
+		margin-bottom: 1.25rem;
+		font-size: 1.125rem;
+	  }
+	}
+  
+	&-info {
+	  &-wrapper {
+		@include desktop-breakpoint {
+		  width: 60%;
+		}
+	  }
+  
+	  &-rating-host-wrapper {
+		@include desktop-breakpoint {
+		@include margin-top-bottom(1.875rem, 1.625rem);
+		display: flex;
+		}
+	  }
+	}
+  }
+  
+  .tag-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .rating {
+	&-wrapper {
+	  @include desktop-breakpoint {
+		order: 2;
+	  }
+	}
+  
+	&-host-wrapper {
+	@include flex-spacebetween;
+	@include margin-top-bottom(1rem, 1rem);
+  
+	  @include desktop-breakpoint {
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		width: 40%;
+		margin-bottom: 0;
+	  }
+	}
+  }
+  
+  .host {
+	&-wrapper {
+	@include flex-center;
+	  @include desktop-breakpoint {
+		order: 1;
+		margin-bottom: 1.5rem;
+	  }
+	}
+  
+	&-name {
+	  margin-right: 0.75rem;
+	  color: $primary-color;
+	  font-size: 0.75rem;
+	  font-weight: 500;
+	  text-align: end;
+  
+	  @include desktop-breakpoint {
+		height: 4rem;
+		font-size: 1.125rem;
+		line-height: 150%;
+	  }
+	}
+  
+	&-picture {
+	  width: 2rem;
+	  height: 2rem;
+	  border-radius: 50%;
+  
+	  @include desktop-breakpoint {
+		width: 4rem;
+		height: 4rem;
+	  }
+	}
+  }
+  
+  .description-equipments-wrapper {
+	@include desktop-breakpoint {
+	  display: flex;
+	  justify-content: space-between;
+	}
+  
+	.collapse {
+	  @include desktop-breakpoint {
+		border-radius: $border-radius;
+	  }
+  
+	  &-section {
+		@include desktop-breakpoint {
+		  width: 47%;
+		  padding: 0;
+		}
+	  }
+  
+	  &-title {
+		@include desktop-breakpoint {
+		  font-size: 1.125rem;
+		}
+	  }
+  
+	  &-icon {
+		@include desktop-breakpoint {
+		  margin-right: 0.75rem;
+		}
+	  }
+  
+	  &-text {
+		@include desktop-breakpoint {
+		  padding-top: 1.875rem;
+		  padding-right: 1.25rem;
+		  padding-bottom: 1.875rem;
+		  padding-left: 1.25rem;
+		  font-size: 1.125rem;
+		}
+	  }
+	}
+  }
+  

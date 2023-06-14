@@ -1,9 +1,6 @@
-import React from 'react'
 
-function Tag() {
-  return (
-    <div>Tag</div>
-  )
+function Tag({ tagName }) {
+	return <div className="tag">{tagName}</div>
 }
 
 export default Tag

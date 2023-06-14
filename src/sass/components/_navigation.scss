@@ -1,0 +1,46 @@
+.nav {
+  @include position;
+  right: 1.25rem;
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateY(-50%);
+
+  &-link {
+    margin-left: 0.625rem;
+    color: $primary-color;
+    font-size: 0.75rem;
+    font-weight: $font-weight;
+    line-height: 143%;
+    text-transform: uppercase;
+	text-decoration: none;
+    
+    @include desktop-breakpoint {
+      margin-left: 3.5625rem;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: stretch;
+    padding: 1.25rem;
+    
+    @include desktop-breakpoint {
+      padding: 2.5rem 1.25rem;
+    }
+    
+    img {
+      width: auto;
+      height: 2.625rem;
+      
+      @include desktop-breakpoint {
+        height: 3.875rem;
+      }
+    }
+  }
+}
+

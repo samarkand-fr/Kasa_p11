@@ -1,9 +1,21 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 
-function Thumb() {
+function Thumb({ link, cover, title }) {
   return (
-    <div>Card</div>
-  )
+    // Wrapper div for the thumbnail
+    <div className="thumb">
+      {/* Link component for navigation */}
+      <Link to={link}>
+        {/* Wrapper div for the thumbnail cover */}
+        <div className="thumb-cover-wrapper">
+          {/* Cover image */}
+          <img src={cover} alt="" />
+        </div>
+        {/* Thumbnail title */}
+        <h2 className="thumb-title">{title}</h2>
+      </Link>
+    </div>
+  );
 }
 
-export default Thumb
+export default Thumb;
