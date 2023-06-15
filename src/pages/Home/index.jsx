@@ -6,7 +6,7 @@ import Thumb from '../../components/Thumb';
 
 const Home = () => {
   return (
-    <section className="home">
+    <section className="home content-wrapper">
       {/* Render the banner component with the home banner image and title */}
       <Banner picture={homeBanner} title="Chez vous, partout et ailleurs" />
       {/* Fetch the data for announcements */}

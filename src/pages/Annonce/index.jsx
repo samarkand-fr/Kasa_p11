@@ -9,6 +9,7 @@ function Annonce() {
   const { annonceId } = useParams();
 
   return (
+ <div className='content-wrapper'>
     <FetchData url="/annonces.json">
       {(fetchedData, error) => {
         const thisAnnonce = fetchedData?.find((annonce) => annonce.id === annonceId);
@@ -21,6 +22,7 @@ function Annonce() {
         return <AnnonceContent annonce={thisAnnonce} />;
       }}
     </FetchData>
+    </div>
   );
 }
 

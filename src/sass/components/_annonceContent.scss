@@ -9,6 +9,9 @@
 	  @include desktop-breakpoint {
 		font-size: 2.25rem;
 	  }
+	  @include tablet-breakpoint {
+		font-size: 2rem;
+	  }
 	}
   
 	&-location {
@@ -86,6 +89,11 @@
 		font-size: 1.125rem;
 		line-height: 150%;
 	  }
+	  @include tablet-breakpoint {
+		height: 4rem;
+		font-size: 1rem;
+		
+	  }
 	}
   
 	&-picture {
@@ -96,6 +104,11 @@
 	  @include desktop-breakpoint {
 		width: 4rem;
 		height: 4rem;
+	  }
+	  @include tablet-breakpoint {
+		width: 3rem;
+		height: 3rem;
+		align-self:self-start;
 	  }
 	}
   }
@@ -122,6 +135,9 @@
 		@include desktop-breakpoint {
 		  font-size: 1.125rem;
 		}
+		@include tablet-breakpoint {
+		font-size: large;
+		  }
 	  }
   
 	  &-icon {

@@ -1,21 +1,26 @@
 .tag {
-	min-width: 4rem;
+	display: inline-block;
 	margin-top: 0.75rem;
 	margin-right: 0.625rem;
 	padding: 0.125rem 0.625rem;
-	border-radius: ($border-radius/2);
+	border-radius: calc($border-radius/2);
 	background: $primary-color;
 	color: $white-color;
 	font-size: 0.625rem;
 	line-height: 142.6%;
 	text-align: center;
 	vertical-align: middle;
+  
 	@include desktop-breakpoint {
-		min-width: 7.1875rem;
-		margin-top: 0;
-		margin-right: 0.625rem;
-		padding: 0.1875rem 0.9375rem;
-		border-radius: $border-radius;
-		font-size: 0.875rem;
+	  margin-top: 0;
+	  margin-right: 0.625rem;
+	  padding: 0.1875rem 0.9375rem;
+	  border-radius: $border-radius;
+	  font-size: 0.875rem;
 	}
+	@include tablet-breakpoint {
+		max-width: 7.1875rem;
+  }
 }
+  
+  

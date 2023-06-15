@@ -33,7 +33,7 @@ function About() {
   ];
 
   return (
-    <section className="about-section">
+    <section className="about-section  content-wrapper">
       <Banner
         picture={aproposBanner}
         className="banner-img about-banner"
