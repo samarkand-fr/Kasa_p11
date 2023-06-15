@@ -6,14 +6,19 @@
   transform: translateY(-50%);
 
   &-link {
-    margin-left: 0.625rem;
+    margin-left: 1.625rem;
     color: $primary-color;
     font-size: 0.75rem;
     font-weight: $font-weight;
     line-height: 143%;
     text-transform: uppercase;
-	text-decoration: none;
+	  text-decoration: none;
     
+    @include tablet-breakpoint {
+      margin-left: 3.5625rem;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
     @include desktop-breakpoint {
       margin-left: 3.5625rem;
       font-size: 1.5rem;

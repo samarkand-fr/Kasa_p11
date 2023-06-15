@@ -1,5 +1,7 @@
 .tag {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center; 
+	justify-content: center;
 	margin-top: 0.75rem;
 	margin-right: 0.625rem;
 	padding: 0.125rem 0.625rem;
@@ -7,20 +9,20 @@
 	background: $primary-color;
 	color: $white-color;
 	font-size: 0.625rem;
-	line-height: 142.6%;
-	text-align: center;
-	vertical-align: middle;
-  
+	text-align: left; 
+	white-space: nowrap; /* Prevent text wrapping to the second row */
+
 	@include desktop-breakpoint {
-	  margin-top: 0;
-	  margin-right: 0.625rem;
-	  padding: 0.1875rem 0.9375rem;
-	  border-radius: $border-radius;
-	  font-size: 0.875rem;
+		margin-top: 0;
+		margin-right: 0.625rem;
+		padding: 0.1875rem 0.9375rem;
+		border-radius: $border-radius;
+		font-size: 1.875rem;
+		text-align: center; 
+		overflow: hidden; 
 	}
 	@include tablet-breakpoint {
 		max-width: 7.1875rem;
-  }
+		font-size: 0.875rem;
+	}
 }
-  
-  

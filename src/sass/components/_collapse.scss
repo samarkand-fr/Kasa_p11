@@ -7,10 +7,15 @@
 	background-color: $primary-color;
 	cursor: pointer;
 	transition: background-color 0.6s ease;
+	@include tablet-breakpoint {
+		height: 2.9375rem;
+		padding-left: 1.125rem;
+	}
 	@include desktop-breakpoint {
 		height: 2.9375rem;
 		padding-left: 1.125rem;
 	}
+	
 	&-section {
 		display: flex;
 		flex-direction: column;
@@ -26,11 +31,11 @@
 		font-size: 0.8125rem;
 		font-weight: $font-weight;
 		line-height: 142.6%;
+		@include tablet-breakpoint {
+			font-size: 1.2rem;
+		}
 		@include desktop-breakpoint {
 			font-size: 1.5rem;
-		}
-		@include tablet-breakpoint {
-			font-size: 1.1rem;
 		}
 	}
 	&-icon {

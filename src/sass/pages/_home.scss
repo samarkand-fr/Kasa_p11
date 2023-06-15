@@ -16,5 +16,16 @@
 		border-radius: $border-radius;
 		background: #f7f7f7;
 	}
+	@include tablet-breakpoint {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		margin: 0 auto;
+		padding-top: 2.5rem;
+		padding-bottom: 0;
+		row-gap: 2.125rem;
+		border-radius: $border-radius;
+		background: #f7f7f7;
+	}
 }
 
