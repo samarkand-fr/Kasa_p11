@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/samarkand-fr/Kasa_p11/static/css/main.ba9feaee.css",
+    "main.js": "/samarkand-fr/Kasa_p11/static/js/main.4d655a64.js",
+    "static/media/apropos-banner.jpg": "/samarkand-fr/Kasa_p11/static/media/apropos-banner.10720cd2488c628ee695.jpg",
+    "static/media/banner.jpg": "/samarkand-fr/Kasa_p11/static/media/banner.8dbc3e4ffb4f7b0b3bc8.jpg",
+    "static/media/logoHeader.svg": "/samarkand-fr/Kasa_p11/static/media/logoHeader.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/logoFooter.svg": "/samarkand-fr/Kasa_p11/static/media/logoFooter.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/samarkand-fr/Kasa_p11/index.html",
+    "static/media/chevron.svg": "/samarkand-fr/Kasa_p11/static/media/chevron.b052dd29e3a2bab76700eee79e133c37.svg",
+    "static/media/star-empty.svg": "/samarkand-fr/Kasa_p11/static/media/star-empty.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/star-full.svg": "/samarkand-fr/Kasa_p11/static/media/star-full.6430150c126a3adf92c132c52c9c7428.svg",
+    "static/media/slider-arrow.svg": "/samarkand-fr/Kasa_p11/static/media/slider-arrow.dda9892314ac4a082ee6a2b064998c28.svg",
+    "main.ba9feaee.css.map": "/samarkand-fr/Kasa_p11/static/css/main.ba9feaee.css.map",
+    "main.4d655a64.js.map": "/samarkand-fr/Kasa_p11/static/js/main.4d655a64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba9feaee.css",
+    "static/js/main.4d655a64.js"
+  ]
+}
