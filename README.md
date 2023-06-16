@@ -1,6 +1,6 @@
 ## KASA
 
-![](./src/assets/kasa.png)
+![](./Front-End/src/assets/kasa.png)
 # Frontend for Peer-to-Peer Apartment Rental Platform
 
 
