@@ -1,15 +1,38 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState('');
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
+  useEffect(() => {
+    // Set initial active link on component mount
+    //runs whenever the location.pathname changes and updates the activeLink state accordingly.
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
+
   return (
     <nav className="nav">
-      {/* Render navigation item for the home page */}
-      <NavLink className="nav-link" to="/" exact="true">
+      {/* Navigation link for Accueil */}
+      <NavLink
+        className={`nav-link ${activeLink === '/' && 'active'}`}
+        to="/"
+        onClick={() => handleLinkClick('/')}
+        exact
+      >
         Accueil
       </NavLink>
-      {/* Render navigation item for the about page */}
-      <NavLink className="nav-link" to="/a-propos" exact="true">
+      {/* Navigation link for À Propos */}
+      <NavLink
+        className={`nav-link ${activeLink === '/a-propos' && 'active'}`}
+        to="/a-propos"
+        onClick={() => handleLinkClick('/a-propos')}
+        exact
+      >
         À Propos
       </NavLink>
     </nav>
