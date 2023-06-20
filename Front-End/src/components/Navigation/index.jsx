@@ -22,7 +22,7 @@ const Navigation = () => {
         className={`nav-link ${activeLink === '/' && 'active'}`}
         to="/"
         onClick={() => handleLinkClick('/')}
-        exact
+        exact="true"
       >
         Accueil
       </NavLink>
@@ -31,7 +31,7 @@ const Navigation = () => {
         className={`nav-link ${activeLink === '/a-propos' && 'active'}`}
         to="/a-propos"
         onClick={() => handleLinkClick('/a-propos')}
-        exact
+        exact="true"
       >
         À Propos
       </NavLink>
