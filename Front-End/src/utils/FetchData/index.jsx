@@ -28,10 +28,6 @@ const FetchData = ({ url, children }) => {
     fetchData(); // Invoke the fetch data function when the component mounts or when the URL prop changes
   }, [url]);
 
-  useEffect(() => {
-    // Set the document title
-    document.title = 'Accueil - Kasa';
-  }, []);
 
   return (
     <>

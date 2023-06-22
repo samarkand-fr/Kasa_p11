@@ -1,10 +1,17 @@
 import React from 'react';
+import { useEffect } from 'react';
 import FetchData from '../../utils/FetchData';
 import homeBanner from '../../assets/banner.jpg';
 import Banner from '../../components/Banner';
 import Thumb from '../../components/Thumb';
 
 const Home = () => {
+  
+  useEffect(() => {
+    // Set the document title
+    document.title = 'Accueil - Kasa';
+  }, []);
+
   return (
     <section className="home content-wrapper">
       {/* Render the banner component with the home banner image and title */}
