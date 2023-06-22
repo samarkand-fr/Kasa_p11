@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import GallerySlides from './GallerySlides'; // Import the GallerySlides component
 import sliderArrow from '../../assets/slider-arrow.svg';
 
+/**
+ * Gallery component to display a gallery of images with navigation arrows.
+ * @function Gallery
+ * @param {string[]} images - Array of image URLs.
+ * @returns {ReactNode} JSX injected in the DOM.
+ */
 function Gallery({ images }) {
   const [current, setCurrent] = useState(0); // State to track the current slide index
   const length = images.length; // Length of the images array

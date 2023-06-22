@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logoHeader.svg';
 import Navigation from '../Navigation';
 
+/**
+ * Renders a header component.
+ * @function Header
+ * @returns {ReactNode} JSX injected in the DOM.
+ */
 const Header = () => {
   return (
     <header className="header-wrapper">

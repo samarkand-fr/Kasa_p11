@@ -4,6 +4,13 @@ import Tag from '../../components/Tag';
 import Rating from '../../components/Rate';
 import Collapse from '../../components/Collapse';
 
+/**
+ * Renders the content of an announcement.
+ * @function AnnonceContent
+ * @param {Object} annonce - The announcement object containing details about the announcement.
+ * @returns {ReactNode} JSX injected in the DOM.
+ */
+
 function AnnonceContent({ annonce }) {
   const { title, location, tags, rating, host, pictures, description, equipments } = annonce;
   const [firstName, lastName] = host.name.split(' ');

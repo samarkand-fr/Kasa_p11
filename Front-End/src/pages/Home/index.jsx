@@ -11,6 +11,12 @@ const Home = () => {
       <Banner picture={homeBanner} title="Chez vous, partout et ailleurs" />
       {/* Fetch the data for announcements */}
       <FetchData url="/annonces.json">
+                {/**
+         * Callback function to render the list of announcements.
+         * @param {Array} annonces - Array of announcement objects.
+         * @returns {ReactNode} JSX representing the list of announcements.
+         */}
+
         {(annonces) => (
           <div className="thumb-wrapper">
             {/* Render each announcement as a Thumb component */}

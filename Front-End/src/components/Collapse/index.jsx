@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import chevron from '../../assets/chevron.svg';
 
+/**
+ * Renders a collapse component.
+ * @function Collapse
+ * @param {string} title - The title of the collapse section.
+ * @param {string[]|string} content - The content of the collapse section. It can be either a string or an array of strings.
+ * @returns {ReactNode} JSX injected in the DOM.
+ */
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Function to toggle the collapse
+  /**
+   * Toggles the collapse section.
+   */
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };

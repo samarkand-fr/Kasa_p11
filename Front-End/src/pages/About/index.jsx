@@ -3,6 +3,12 @@ import aproposBanner from '../../assets/apropos-banner.jpg';
 import Collapse from '../../components/Collapse';
 import Banner from '../../components/Banner';
 
+/**
+ * Renders the About page component.
+ * @function About
+ * @returns {ReactNode} JSX injected in the DOM.
+ */
+
 function About() {
   useEffect(() => {
     // Update the document title using the useEffect hook to ensure it only runs once.

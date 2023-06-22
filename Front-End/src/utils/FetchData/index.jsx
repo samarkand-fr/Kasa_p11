@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Error from '../../components/Error';
 
+/**
+ * FetchData component to fetch data from a URL and handle error states.
+ * @function FetchData
+ * @param {string} url - The URL to fetch data from.
+ * @param {function} children - A function that takes the fetched data as an argument and returns JSX.
+ * @returns {ReactNode} JSX injected in the DOM.
+ */
 const FetchData = ({ url, children }) => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(false);
+  const [data, setData] = useState(null); // State to store the fetched data
+  const [error, setError] = useState(false); // State to track if an error occurred
 
   useEffect(() => {
     // Fetch data from the provided URL
