@@ -19,7 +19,7 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className={`collapse-section ${isOpen ? 'active' : ''}`}>
+    <div className="collapse-section ">
        {/* Button to toggle the collapse */}
       <button className="collapse" onClick={toggleCollapse}>
         <span className="collapse-title">{title}</span>
