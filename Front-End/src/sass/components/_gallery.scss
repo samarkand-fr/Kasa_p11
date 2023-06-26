@@ -1,8 +1,5 @@
 
 
-/* ---------------------------------------- */
-/* ==              GALLERY               */
-/*---------------------------------------- */
 .gallery,
 .image {
 	height: 15.9375rem;
@@ -36,7 +33,6 @@
 	  margin-bottom: 0.75rem;
 	}
   }
-  
 
 .image {
 	width: 100%;
@@ -87,3 +83,10 @@
 		transition-duration: 1s;
 	}
 }
+
+@media screen and (max-width: map-get($breakpoints, tablet)) {
+	.page-number {
+	  display: none;
+	}
+  }
+  
